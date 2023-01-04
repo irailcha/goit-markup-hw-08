@@ -1,0 +1,42 @@
+/*Header*/
+.contact {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    
+
+&__link {
+    @extend %flex-align-items;
+    color:$color-secondary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+
+    transition-property: color;
+    @extend %transition;
+    
+    &:hover,
+    &:focus {
+    color: $color-brand;
+}
+
+    
+}
+
+&__envelope{
+    @include icon (16px, 12px, currentColor);
+    margin-right: 10px;
+    
+    }
+
+&__smartphone{
+    @include icon (10px, 16px, currentColor);
+    margin-right: 10px;
+        
+}
+
+}

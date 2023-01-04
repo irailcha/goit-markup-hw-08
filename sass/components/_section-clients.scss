@@ -1,0 +1,37 @@
+.clients {
+    @extend %display-padding-margin;
+    margin-left: calc(-1 * $card-set-gap);
+    margin-top: calc(-1 * $card-set-gap);
+
+
+&__logo{
+    width:106px;
+    height:60px;
+    fill: currentColor;
+    
+}
+&__link{
+    display: block;
+
+    padding: 16px 32px;
+    @include bordered (1px, rgba(175, 177, 184, 1));
+    border-radius: 4px;
+    color: $color-links;
+    transition-property: border, color;
+    @extend %transition;
+
+    &:hover,
+    &:focus{
+    color: $color-brand;
+    border-color: $color-brand;
+
+}
+}
+    
+
+
+&__card {
+width: calc( 100% / 6 - $card-set-gap);
+margin-left: $card-set-gap;
+margin-top: $card-set-gap;
+}}

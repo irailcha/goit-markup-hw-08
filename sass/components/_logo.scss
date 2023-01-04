@@ -1,0 +1,40 @@
+.logo{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    color: $color-brand;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    @extend %transition;
+    max-width: 146px;
+
+    &:hover,
+    &:focus {
+        color: $color-brand;
+        
+    }
+
+
+
+&__text {
+    color: $color-logo-second;
+    font-family: 'Raleway', sans-serif;
+&:hover,
+&:focus {
+    color: $color-logo-second;
+}
+
+&--inverse{
+    color: $background-color-first;
+
+    &:hover,
+    &:focus{
+        color: $background-color-first;
+    }}
+
+}
+}

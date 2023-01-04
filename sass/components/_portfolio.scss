@@ -1,0 +1,22 @@
+.section-portfolio {
+    padding-top: 94px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+
+
+
+&__item {
+    min-width: 73px;
+}
+
+}
+.visually-hidden{
+@include visually-hidden()};
+
+
+

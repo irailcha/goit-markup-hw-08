@@ -1,0 +1,63 @@
+
+.section-hero__title {
+        color: $background-color-first;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 696px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 32px;
+    }
+    
+
+.section__title {
+    color: $color-primary;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.network-set__title{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $background-color-first;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.subscription__title{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $background-color-first;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.modal__title{
+color: rgba(33, 33, 33, 1);
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+letter-spacing: 0.03em;
+text-align: center;
+padding-bottom: 12px;
+
+}
+

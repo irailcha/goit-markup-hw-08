@@ -1,0 +1,95 @@
+
+.button-hero {
+    @extend %button;
+    color: $background-color-first;
+    background-color: $color-brand;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    display: block;
+    padding: 10px 32px;
+    margin: auto;
+    transition-property: background-color,  box-shadow;
+
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent;
+    }
+
+}
+
+
+.button-subscribe{
+    @extend %button;
+    color: $background-color-first;
+    background-color: $color-brand;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
+    transition-property: background-color;
+
+    &__icon{
+        @include icon (24px, 24px, $background-color-first);
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent;
+        }
+
+    }
+
+
+
+.button-filter {
+    @extend %button;
+    color: $color-primary;
+    background-color: $background-color-third;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    padding: 6px 22px;
+    transition-property: background-color, color, box-shadow;
+
+    
+    
+    &:hover,
+    &:focus {
+    color: $background-color-first;
+    background-color: $color-brand;
+    box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.12), 0px 1px 2px 0px hsla(0, 0%, 0%, 0.08), 0px 3px 1px 0px hsla(0, 0%, 0%, 0.1);
+    
+    }
+        
+    }
+
+
+.button-modal-submit{
+    @extend %button;
+    color: $background-color-first;
+    background-color: $color-brand;
+    box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 52px;
+    margin-right: auto;
+    margin-left: auto;
+    transition-property: background-color;
+
+
+    &:hover,
+    &:focus{
+        background-color: $color-accent;
+    }
+
+    }
+    

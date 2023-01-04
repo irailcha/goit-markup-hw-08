@@ -1,0 +1,35 @@
+
+
+.development {
+    @extend %display-padding-margin;
+    gap: $card-set-gap;
+
+
+&__card{
+    position: relative;
+}
+}
+
+.label{
+     @extend %flex-align-items;
+   
+    justify-content: space-around;
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color:  rgba(47, 48, 58, 0.8);
+    text-align: center;
+
+
+&__title{
+    display: inline-block;
+    color: $background-color-first;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}}

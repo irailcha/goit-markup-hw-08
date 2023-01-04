@@ -1,0 +1,53 @@
+.network{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap: 10px;
+
+
+
+&__link{
+    @include link-icon (44px, 44px);
+    @extend %icon-network;
+    color: $color-links;
+    transition-property: background-color, color;
+    @extend %transition;
+
+    &:hover,
+    &:focus{
+        background-color: $color-brand;
+        color: $background-color-first;
+    
+    }
+}
+
+&__icon{
+    @include icon (20px, 20px, currentColor)
+}
+
+/*--------------*/
+
+&--inverse{
+    display: flex;
+    gap: 10px;
+}
+
+
+&__link--inverse{
+    @include link-icon (44px, 44px);
+    @extend %icon-network;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    @extend %transition;
+
+    &:hover, &:focus{
+        background-color: $color-brand;
+    }
+
+}
+
+&__icon--inverse{
+    @include icon (20px, 20px, $background-color-first);
+
+}}
