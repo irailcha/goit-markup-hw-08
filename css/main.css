@@ -575,8 +575,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 img {
@@ -602,7 +608,7 @@ img {
   border: none;
 }
 
-.project-list, .clients, .development {
+.project-list, .development {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1251,17 +1257,31 @@ img {
 }
 
 .clients {
-  margin-left: -30px;
-  margin-top: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
 }
+
+.clients__card {
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
+  margin-bottom: 30px;
+}
+
 .clients__logo {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
+
 .clients__link {
   display: block;
-  padding: 16px 32px;
+  padding: 16px 52px;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
   color: #AFB1B8;
@@ -1272,12 +1292,42 @@ img {
   color: #2196F3;
   border-color: #2196F3;
 }
-.clients__card {
-  width: calc(16.6666666667% - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+
+/*
+/
+.clients {
+    @extend %display-padding-margin;
+    margin-left: calc(-1 * $card-set-gap);
+    margin-top: calc(-1 * $card-set-gap);
+
+
+
+.clients__link{
+    display: block;
+
+    padding: 16px 32px;
+    @include bordered (1px, rgba(175, 177, 184, 1));
+    border-radius: 4px;
+    color: $color-links;
+    transition-property: border, color;
+    @extend %transition;
+
+    &:hover,
+    &:focus{
+    color: $color-brand;
+    border-color: $color-brand;
+
+}
 }
 
+
+
+.clients__card {
+width: calc( 100% / 6 - $card-set-gap);
+margin-left: $card-set-gap;
+margin-top: $card-set-gap;
+}}
+*/
 .contact-footer {
   display: block;
   width: 231px;
