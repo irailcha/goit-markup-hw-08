@@ -1,22 +1,50 @@
+
 .visually-hidden {
     @include visually-hidden()
 }
+
 .section-features{
-    padding-bottom: 0;
+padding-bottom: 60px;
 }
+
+
+
 .features {
+    @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    gap:30px;
     
+   }
+
+    @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
     margin-left: calc(-1 * $card-set-gap);
+}
 
-
-&__list {
-    flex-basis: calc(100% / 4 - $card-set-gap);
-    margin-left: $card-set-gap;
 }
 
 
-&__title {
+.features__list {
+    @media screen and (min-width: 768px) {
+        
+    flex-basis: calc((100% - 4 * 15px) / 2);}
+
+    @media screen and (min-width: 1200px){
+        flex-basis: calc(100% / 4 - $card-set-gap);
+        margin-left: $card-set-gap;}
+}
+
+    
+
+.features__list{
+    margin-bottom: 30px;
+}
+.features__list:last-child{
+    margin-bottom: 0;
+}
+
+.features__title {
     margin-top: 0;
     margin-bottom: 10px;
     color: $color-primary;
@@ -25,9 +53,15 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
+
+
+    @media screen and (min-width: 768px){
+    text-align: left;
+    }
 }
 
-&__text {
+.features__text {
     margin-top: 0;
     margin-bottom: 0;
     color: $color-secondary;
@@ -37,7 +71,7 @@
 }
 
 
-&__list::before{
+.features__list::before{
     display: block;
 
     margin-bottom: 30px;
@@ -48,17 +82,60 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-&__list:nth-child(1):before{
+.features__list:nth-child(1):before{
     background-image: url(../images/antenna.svg);
 }
 
-&__list:nth-child(2):before{
+.features__list:nth-child(2):before{
     background-image: url(../images/clock.svg);
 }
-&__list:nth-child(3):before{
+.features__list:nth-child(3):before{
     background-image: url(../images/diagram.svg);
 }
-&__list:nth-child(4):before{
+.features__list:nth-child(4):before{
     background-image: url(../images/astronaut.svg);
  }
+
+
+
+
+
+
+
+/*
+
+.section-features{
+    padding-bottom: 0;
 }
+.features {
+    display: flex;
+    
+    margin-left: calc(-1 * $card-set-gap);
+
+
+    .features__list {
+    flex-basis: calc(100% / 4 - $card-set-gap);
+    margin-left: $card-set-gap;
+}
+
+
+.features__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color-secondary;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}*/
+

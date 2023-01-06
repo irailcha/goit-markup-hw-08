@@ -1,6 +1,12 @@
 
+.section-development{
+ @media screen and (max-width:1199px){
+    display: none;
+}}
 
 .development {
+   
+
     @extend %display-padding-margin;
     gap: $card-set-gap;
 
