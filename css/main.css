@@ -602,7 +602,7 @@ img {
   border: none;
 }
 
-.project-list, .clients, .team, .development {
+.project-list, .clients, .development {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,7 +913,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1169,13 +1168,39 @@ img {
 
 .section-team {
   background-color: #F5F4FA;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
-.team {
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.team:last-child {
+  margin-bottom: 0;
+}
+
 .team__card {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1185,12 +1210,27 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: center;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .team__card {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card {
+    padding-bottom: 30px;
+  }
+}
+
 .team__img {
+  width: 100%;
   margin-top: 0;
   margin-bottom: 30px;
-  width: auto;
 }
+
 .team__name {
   font-weight: 500;
   font-size: 16px;
@@ -1199,13 +1239,15 @@ img {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 .team__text {
   color: #757575;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .clients {
