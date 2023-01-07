@@ -4,20 +4,26 @@
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    gap: 15px;
+    margin-left: calc(-1 * $card-set-gap);
+    margin-top: calc(-1 * $card-set-gap);
+
+    @media screen and (min-width: 1200px){
+    flex-wrap: nowrap;
+    }
 }
-
-
-
 
 .clients__card {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin-bottom: 30px;
+    width: calc( 100% / 2 - $card-set-gap);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+   
+    @media screen and (min-width: 768px) {
+    width: calc( 100% / 3 - $card-set-gap);}
+
+
+    @media screen and (min-width: 1200px){
+    width: calc( 100% / 6 - $card-set-gap);}
 }
-
-
-
-
 
 
 .clients__logo{
@@ -42,45 +48,12 @@
     &:focus{
     color: $color-brand;
     border-color: $color-brand;
-
-}}
-
-
-
-
-
-/*
-/
-.clients {
-    @extend %display-padding-margin;
-    margin-left: calc(-1 * $card-set-gap);
-    margin-top: calc(-1 * $card-set-gap);
-
-
-
-.clients__link{
-    display: block;
-
-    padding: 16px 32px;
-    @include bordered (1px, rgba(175, 177, 184, 1));
-    border-radius: 4px;
-    color: $color-links;
-    transition-property: border, color;
-    @extend %transition;
-
-    &:hover,
-    &:focus{
-    color: $color-brand;
-    border-color: $color-brand;
-
 }
+    @media screen and (min-width: 768px) {
+    padding: 16px 60px;}
+
+    @media screen and (min-width: 1200px) {
+        padding: 16px 32px;}
 }
-    
 
 
-.clients__card {
-width: calc( 100% / 6 - $card-set-gap);
-margin-left: $card-set-gap;
-margin-top: $card-set-gap;
-}}
-*/

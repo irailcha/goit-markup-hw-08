@@ -1017,39 +1017,39 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .features__list {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .features__list {
     -ms-flex-preferred-size: calc(25% - 30px);
         flex-basis: calc(25% - 30px);
-    margin-left: 30px;
   }
 }
 
-.features__list {
-  margin-bottom: 30px;
+@media screen and (max-width: 479px) {
+  .features__list {
+    margin-bottom: 30px;
+  }
+  .features__list:last-child {
+    margin-bottom: 0;
+  }
 }
-
-.features__list:last-child {
-  margin-bottom: 0;
-}
-
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -1193,7 +1193,8 @@ img {
     padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1201,10 +1202,6 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-}
-
-.team:last-child {
-  margin-bottom: 0;
 }
 
 .team__card {
@@ -1217,12 +1214,12 @@ img {
           align-items: flex-start;
   text-align: center;
   padding-bottom: 24px;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__card {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1231,6 +1228,14 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .team__card {
+    margin-bottom: 30px;
+  }
+  .team__card:last-child {
+    margin-bottom: 0;
+  }
+}
 .team__img {
   width: 100%;
   margin-top: 0;
@@ -1264,13 +1269,30 @@ img {
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 15px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .clients__card {
-  -ms-flex-preferred-size: calc((100% - 60px) / 2);
-      flex-basis: calc((100% - 60px) / 2);
-  margin-bottom: 30px;
+  width: calc(50% - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .clients__card {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__card {
+    width: calc(16.6666666667% - 30px);
+  }
 }
 
 .clients__logo {
@@ -1292,42 +1314,17 @@ img {
   color: #2196F3;
   border-color: #2196F3;
 }
-
-/*
-/
-.clients {
-    @extend %display-padding-margin;
-    margin-left: calc(-1 * $card-set-gap);
-    margin-top: calc(-1 * $card-set-gap);
-
-
-
-.clients__link{
-    display: block;
-
+@media screen and (min-width: 768px) {
+  .clients__link {
+    padding: 16px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
     padding: 16px 32px;
-    @include bordered (1px, rgba(175, 177, 184, 1));
-    border-radius: 4px;
-    color: $color-links;
-    transition-property: border, color;
-    @extend %transition;
-
-    &:hover,
-    &:focus{
-    color: $color-brand;
-    border-color: $color-brand;
-
-}
+  }
 }
 
-
-
-.clients__card {
-width: calc( 100% / 6 - $card-set-gap);
-margin-left: $card-set-gap;
-margin-top: $card-set-gap;
-}}
-*/
 .contact-footer {
   display: block;
   width: 231px;

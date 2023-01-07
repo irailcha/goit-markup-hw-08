@@ -13,13 +13,14 @@ padding-bottom: 60px;
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    margin-left: calc(-1 * $card-set-gap);
+    margin-top: calc(-1 * $card-set-gap);
     
    }
 
     @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    margin-left: calc(-1 * $card-set-gap);
+    
 }
 
 }
@@ -27,22 +28,23 @@ padding-bottom: 60px;
 
 .features__list {
     @media screen and (min-width: 768px) {
-        
-    flex-basis: calc((100% - 4 * 15px) / 2);}
+        margin-left: $card-set-gap;
+        margin-top: $card-set-gap;
+        width: calc(100% / 2 - $card-set-gap);}
 
     @media screen and (min-width: 1200px){
-        flex-basis: calc(100% / 4 - $card-set-gap);
-        margin-left: $card-set-gap;}
+        flex-basis: calc(100% / 4 - $card-set-gap);}
+        
 }
 
     
-
+@media screen and (max-width: 479px){
 .features__list{
     margin-bottom: 30px;
 }
 .features__list:last-child{
     margin-bottom: 0;
-}
+}}
 
 .features__title {
     margin-top: 0;

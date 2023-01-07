@@ -16,16 +16,14 @@
         padding: 0;
 
         flex-wrap: wrap;
-        gap: 30px;}
+        margin-left: calc(-1 * $card-set-gap);
+        margin-top: calc(-1 * $card-set-gap);}
 
         @media screen and (min-width: 1200px) {
-flex-wrap: nowrap;}
+        flex-wrap: nowrap;}
         
        }
 
-.team:last-child{
-    margin-bottom: 0;
-}
 
 
 .team__card{
@@ -35,18 +33,32 @@ flex-wrap: nowrap;}
     align-items: flex-start;
     text-align: center;
     padding-bottom: 24px;
-    margin-bottom: 30px;
-
-
-
+    
+     
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 4 * 15px) / 2);}
+        margin-left: $card-set-gap;
+        margin-top: $card-set-gap;
+        width: calc(100% / 2 - $card-set-gap);
+    }
     
     @media screen and (min-width: 1200px){
         padding-bottom: 30px;}
     }
 
+@media screen and (max-width: 479px){
 
+    .team__card{
+    margin-bottom: 30px;}
+
+    
+    .team__card:last-child{
+        
+        margin-bottom: 0;
+    }
+}
+    
+
+    
 
 
 
