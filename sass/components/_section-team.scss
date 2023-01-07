@@ -33,29 +33,22 @@
     align-items: flex-start;
     text-align: center;
     padding-bottom: 24px;
+    margin-bottom: 30px;
     
+    &:last-child{
+        margin-bottom: 0;
+    }
      
     @media screen and (min-width: 768px) {
         margin-left: $card-set-gap;
         margin-top: $card-set-gap;
+        margin-bottom: 0;
         width: calc(100% / 2 - $card-set-gap);
     }
     
     @media screen and (min-width: 1200px){
         padding-bottom: 30px;}
     }
-
-@media screen and (max-width: 479px){
-
-    .team__card{
-    margin-bottom: 30px;}
-
-    
-    .team__card:last-child{
-        
-        margin-bottom: 0;
-    }
-}
     
 
     
