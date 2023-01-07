@@ -4,10 +4,23 @@
 
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    
+    margin-bottom: 40px;
     gap: 8px;
 
+
+    @media screen and (max-width: 767px){
+        justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+    }
 
 
 &__item {
@@ -19,4 +32,25 @@
 @include visually-hidden()};
 
 
+.button-filter {
+    @extend %button;
+    color: $color-primary;
+    background-color: $background-color-third;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    padding: 6px 22px;
+    transition-property: background-color, color, box-shadow;
 
+    
+    
+    &:hover,
+    &:focus {
+    color: $background-color-first;
+    background-color: $color-brand;
+    box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.12), 0px 1px 2px 0px hsla(0, 0%, 0%, 0.08), 0px 3px 1px 0px hsla(0, 0%, 0%, 0.1);
+    
+    }
+        
+    }
