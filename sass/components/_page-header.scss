@@ -49,3 +49,15 @@
         border-radius: 50%;
         outline: none;
       }
+
+
+      .menu-network{
+        display: flex;
+        gap: 15px;
+      }
+
+      .menu-network__link{
+        color:$color-secondary;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+      }
