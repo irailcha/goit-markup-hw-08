@@ -1,6 +1,5 @@
 .backdrop{
     position: fixed;
-
     top: 0;
     left: 0;
     width: 100%;
@@ -10,7 +9,7 @@
     opacity: 1;
     transition-property: opacity;
     @extend %transition;
-    
+    overflow-y: scroll;
 
 
 &--is-hidden {
@@ -21,24 +20,28 @@
 }
 
 .modal{
-    position: absolute; 
-
-    width: 528px;
-    height: 581px;
-    padding: 40px;
-    
-    top: 50%;
-    left: 50%;
     background-color: $background-color-first;
-
-
-    transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+        
+    transition-property: opacity;
+    @extend %transition;
     opacity: 1;
     
-    transition-property: opacity;
-        @extend %transition;
+    @media screen and (min-width: 768px){
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    
+    width: 528px;
+    height: 581px;
 
-.backdrop--is-hidden & {
+    }
+    }
+
+.backdrop--is-hidden .modal{
         transform: translate(-50%, -50%) scale(0.5);
         visibility: hidden;
         pointer-events: none;
@@ -47,7 +50,7 @@
     }
 
 
-&__icon-close {
+    .modal__icon-close {
             position: absolute;
     
             width: 18px;
@@ -65,7 +68,7 @@
     
     
         }
-&__close-button {
+        .modal__close-button {
     position: absolute;
 
     top: 8px;
@@ -81,7 +84,7 @@
     cursor: pointer;
 
 }
-}
+
 
 
  
