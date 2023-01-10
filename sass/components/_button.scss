@@ -22,7 +22,13 @@
 
 
 .button-subscribe{
-    @extend %button;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
     color: $background-color-first;
     background-color: $color-brand;
     font-weight: 700;
@@ -32,6 +38,10 @@
     width: 200px;
     height: 50px;
     transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: auto;
+    margin-left: auto;
 
     &__icon{
         @include icon (24px, 24px, $background-color-first);
@@ -52,6 +62,7 @@
 
 .button-modal-submit{
     @extend %button;
+    
     color: $background-color-first;
     background-color: $color-brand;
     box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.15);

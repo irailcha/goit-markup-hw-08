@@ -1,5 +1,56 @@
 .contact-footer {
     display: block;
+    text-align: center;
+    margin-top: 20px;
+
+    &__link {
+        color: $color-secondary;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+        &:hover,
+        &:focus {
+            color: $color-brand;
+        }
+    }
+    
+    
+    &__list {
+        padding-bottom: 8px;
+    
+    
+    &:last-child {
+        padding-bottom: 0;
+    }}
+    }
+    
+    .address {
+        color: $background-color-first;
+    }
+.logo-contact{
+    display: inline-block;
+    margin-bottom: 60px;
+
+}
+
+.network-set{
+    margin-bottom: 60px;
+    display: block;
+    
+
+}
+
+
+
+
+/*.contact-footer {
+    display: block;
     width: 231px;
     margin-right: 70px;
     margin-top: 20px;
@@ -35,4 +86,4 @@
     color: $background-color-first;
 }
 
-
+*/

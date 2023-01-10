@@ -1,33 +1,23 @@
 
-.nav{
+.mobile-menu{
+
+&__nav{
     margin-bottom: 306px;
 }
-
-
-.nav__link{
-    position: relative;
+&__link{
     color: $color-primary;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    
-
-
-
     transition-property: color;
-    @extend %transition;
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-    color: $color-brand;
-
-   
-    
+    color: $color-brand;}
 }
-}
-
-.nav__list{
+&__list{
     margin-bottom: 32px;
 
     &:last-child{
@@ -35,8 +25,7 @@
     }
 }
 
-.nav__link--current{
-position: relative;
+&__link--current{
 color: $color-brand;
 font-weight: 500;
 font-size: 40px;
@@ -44,34 +33,63 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 margin-bottom: 32px;
 }
+}
 
 
 
 
-@media screen and (min-widht:768px) {
+@media(min-width:768px){
     
-.nav {
-    display: flex;
-    margin-left: 93px;
-    align-items: center;
-    gap: 50px;}
-.nav__link--current::after{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: $color-brand;
-    border-radius: 2px;
-    left: 0;
-    bottom: 0;
-    opacity: 1;
-}
-.nav__link{
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-}
+    .nav {
+        display: flex;
+        margin-left: 87px;
+        margin-right: 96px;
+        align-items: center;
+        gap: 50px;}
+    
+    
+    
+    .nav__link{
+        position: relative;
+        color: $color-primary;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+        color: $color-brand;
+        
+    }
+    }
+    
+    .nav__link--current{
+        position: relative;
+        color: $color-brand;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+    }
+    
+    .nav__link--current::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: $color-brand;
+        border-radius: 2px;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+    }}

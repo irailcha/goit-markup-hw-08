@@ -1,10 +1,35 @@
-/*Header*/
-.contact__link{
+
+
+
+/*
+
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  }
+
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+ 
+*/
+
+.mobile-menu{
+
+&__contact-link{
     color:$color-secondary;
     font-weight: 500;
     letter-spacing: 0.02em;
     transition-property: color;
-    @extend %transition;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
@@ -12,82 +37,79 @@
 
 }}
 
-.contant__link--mail{
+&__link--mail{
     font-size: 24px;
     line-height: 1.17;
 }
 
-.contant__link--phone{
+&__link--phone{
     font-size: 34px;
     line-height: 1.17;
 }
-.contact__list{
+&__contact-list{
     margin-bottom: 32px;
 
     &:last-child{
         margin-bottom: 0;
     }
-}
-
-
-
-
-
-
-@media screen and (min-widht:768px) {
-    
-
-.contact {
-    display: flex;
-    margin-left: auto;
-    gap: 50px;
-    
-
-&__link {
-   
-    color:$color-secondary;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
-
-    transition-property: color;
-    @extend %transition;
-    
-    &:hover,
-    &:focus {
-    color: $color-brand;
-}
-
-    
 }}
 
-@media screen and (min-widht:768px){ 
 
 
-.contact__envelope{
-    @include icon (16px, 12px, currentColor);
-    margin-right: 10px;
 
+
+
+@media(min-width:768px){
+    .contact {
+        display: block;
+
+        
+    
+        
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        color:$color-secondary;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        
+    
+        transition-property: color;
+        transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
+        color: $color-brand;
     }
-
-    .contact__smartphone{
-    @include icon (10px, 16px, currentColor);
-    margin-right: 10px;
-
-}}}
-@media (max-width: 767px) {
-    .contact__envelope{
-          display: none;
-        }
-        .contact__smartphone{
-            display: none;
+    
+        
+    }
+    
+    &__envelope{
+        @include icon (16px, 12px, currentColor);
+        margin-right: 10px;
+        
         }
     
+    &__smartphone{
+        @include icon (10px, 16px, currentColor);
+        margin-right: 10px;
+            
+    }}
+
+    &__list{
+        margin-bottom: 10px;
+
+        
+        &__list:last-child{
+            margin-bottom: 0;
+        }
     }
-
-
-
+}
+    
+    

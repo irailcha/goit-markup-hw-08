@@ -1,18 +1,19 @@
 .logo{
-  
         display: flex;
         vertical-align: middle;
         align-items: center;
         color: $color-brand;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
+        font-size: 24px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         transition-property: color;
-        @extend %transition;
-        max-width: 146px;
-
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 16px 0;
+        
+        
     &:hover,
     &:focus {
         color: $color-brand;
@@ -38,4 +39,19 @@
     }}
 
 }
+&-footer{
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+}
+
+@media(min-width:1200px){
+    .logo{
+    
+    font-size: 26px;
+    line-height: 1.19;
+    padding: 0;
+}}

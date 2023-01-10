@@ -1,35 +1,33 @@
 .footer {
     background-color: $background-color-hero;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 15px;
+    
 
     
 &-elements{
-    display: flex;
-    vertical-align: middle;
-    align-items: baseline;
+    display: block;
+    text-align: center;
     
     
 }}
 .subscription {
     display: block;
-    margin-left: 93px;
-    width: 570px;
+    
 }
 .footer-form {
-    display: flex;
-    vertical-align: middle;
-    gap: 12px;
+display: block;
+justify-content: center;
 
 &__input{
-            display: flex;
+            
             @include bordered (1px, rgba(255, 255, 255, 0.3));
             border-radius: 4px;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             background-color: transparent;
             padding: 15px;
-            width: 358px;
+            width: 450px;
             height: 50px;
+            margin-bottom: 20px;
             
             color:$background-color-first;}
             
