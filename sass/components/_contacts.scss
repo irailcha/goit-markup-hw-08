@@ -60,13 +60,7 @@
 
 
 @media(min-width:768px){
-    .contact {
-        display: block;
-
-        
-    
-        
-    
+    .contact{
     &__link {
         display: flex;
         align-items: center;
@@ -75,20 +69,14 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-
-        
-    
         transition-property: color;
         transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
         &:hover,
         &:focus {
         color: $color-brand;
-    }
-    
-        
-    }
+    }}
     
     &__envelope{
         @include icon (16px, 12px, currentColor);
@@ -102,10 +90,10 @@
             
     }}
 
-    &__list{
+.contact__list{
         margin-bottom: 10px;
 
-        
+
         &__list:last-child{
             margin-bottom: 0;
         }
