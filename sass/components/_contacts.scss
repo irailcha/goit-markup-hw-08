@@ -66,8 +66,8 @@
         align-items: center;
         color:$color-secondary;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         transition-property: color;
         transition-duration: 250ms;
@@ -79,14 +79,14 @@
     }}
     
     &__envelope{
-        @include icon (16px, 12px, currentColor);
-        margin-right: 10px;
+        @include icon (14px, 10px, currentColor);
+        margin-right: 8px;
         
         }
     
     &__smartphone{
-        @include icon (10px, 16px, currentColor);
-        margin-right: 10px;
+        @include icon (10px, 14px, currentColor);
+        margin-right: 8px;
             
     }}
 

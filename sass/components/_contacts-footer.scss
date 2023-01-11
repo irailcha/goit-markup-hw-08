@@ -46,44 +46,30 @@
 
 }
 
+@media(min-width:1200px){
+    .contact-footer {
+        display: block;
+        text-align: left;
+        width: 231px;
+        
+    
+    
+    
+    &__link {
 
-
-
-/*.contact-footer {
-    display: block;
-    width: 231px;
-    margin-right: 70px;
-    margin-top: 20px;
-
-
-&__link {
-    color: $color-secondary;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    transition-property: color;
-    @extend %transition;
-
-
-    &:hover,
-    &:focus {
-        color: $color-brand;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    
+    
+    &__list {
+        padding-bottom: 9px;
     }
 }
-
-
-&__list {
-    padding-bottom: 9px;
-
-
-&:last-child {
-    padding-bottom: 0;
+.network-set{
+    margin-bottom: 0;
+}
+.logo-contact{
+    margin-bottom: 0;
 }}
-}
 
-.address {
-    color: $background-color-first;
-}
-
-*/

@@ -12,11 +12,10 @@
 }}
 .subscription {
     display: block;
+    justify-content: center;
     
 }
 .footer-form {
-display: block;
-justify-content: center;
 
 &__input{
             
@@ -40,5 +39,42 @@ justify-content: center;
             letter-spacing: 0.03em;
         }
         
-    }     
+    }   
+
+
+    @media(min-width:768px){
+    .footer__contact-network{
+        display: flex;
+        vertical-align: middle;
+        gap: 165px;
+        justify-content: center;
+    }}
         
+    @media(min-width:1200px){
+        .footer{
+        &-elements{
+                display: flex;
+                vertical-align: middle;
+                align-items: baseline;
+                text-align: left;
+                
+                
+            }}
+            .subscription {
+                margin-left: 93px;
+                width: 570px;
+            }
+            .footer-form {
+                display: flex;
+                vertical-align: middle;
+                gap: 12px;
+        }
+
+        .footer-form__input{
+            display: flex;
+            width: 358px;
+        margin-bottom: 0;}
+        
+        .footer__contact-network{
+            gap: 70px;
+        }}

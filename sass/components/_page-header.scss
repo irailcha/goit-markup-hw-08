@@ -41,11 +41,7 @@
   border: none;
   outline: none;
 }
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
+
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: $color-brand;
@@ -67,14 +63,27 @@ right: 10px;
 
 
 
-  @media(min-width:768px){
+ 
+@media (min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+    
 .mobile-menu{
     display: none;
   }
   
   .header__container{
     display: flex;
+    vertical-align: middle;
+align-self: center;
+justify-content: baseline;
     
+  }
+  .menu{
+display: flex;
+justify-content: baseline;
+align-self: center;
   }
   } 
 

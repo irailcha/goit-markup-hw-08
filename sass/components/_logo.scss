@@ -40,17 +40,15 @@
 
 }
 &-footer{
-    margin: 0;
+    justify-content: center;
     padding: 0;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 }
 
 @media(min-width:1200px){
     .logo{
-    
+        justify-content:flex-start;
     font-size: 26px;
     line-height: 1.19;
     padding: 0;
