@@ -1,5 +1,5 @@
 .project-list {
-    @extend %display-padding-margin;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 

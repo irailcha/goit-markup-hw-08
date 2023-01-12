@@ -1,17 +1,22 @@
 
 .button-hero {
-    @extend %button;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
     color: $background-color-first;
     background-color: $color-brand;
     box-shadow: 0px 4px 4px 0px #00000026;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    display: block;
     padding: 10px 32px;
     margin: auto;
     transition-property: background-color,  box-shadow;
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -22,7 +27,6 @@
 
 
 .button-subscribe{
-    display: block;
     font-family: 'Roboto', sans-serif;
     border-radius: 4px;
     border-style: none;
@@ -61,8 +65,13 @@
 
 
 .button-modal-submit{
-    @extend %button;
-    
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
     color: $background-color-first;
     background-color: $color-brand;
     box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -73,7 +82,8 @@
     margin-right: auto;
     margin-left: auto;
     transition-property: background-color;
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus{

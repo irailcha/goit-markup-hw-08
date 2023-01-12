@@ -82,8 +82,10 @@ justify-content: baseline;
   }
   .menu{
 display: flex;
-justify-content: baseline;
+justify-content: space-between;
 align-self: center;
+margin-left: 87px;
+gap: 96px;
   }
   } 
 

@@ -42,7 +42,8 @@
     border-radius: 4px;
     color: $color-links;
     transition-property: border, color;
-    @extend %transition;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus{

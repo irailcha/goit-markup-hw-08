@@ -7,7 +7,7 @@
 .development {
    
 
-    @extend %display-padding-margin;
+    display: flex;
     gap: $card-set-gap;
 
 
@@ -17,9 +17,9 @@
 }
 
 .label{
-     @extend %flex-align-items;
-   
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
     position: absolute;
 
     bottom: 0;
