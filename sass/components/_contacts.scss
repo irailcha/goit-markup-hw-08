@@ -61,6 +61,7 @@
 
 @media(min-width:768px){
     .contact{
+        display: block;
         padding-top: 21px;
         padding-bottom: 21px;
     &__link {
@@ -108,7 +109,7 @@
     .contact {
         display: flex;
         justify-content: flex-end;
-        gap: 50px;
+        gap: 30px;
         padding: 0;
         
 
@@ -117,8 +118,8 @@
     margin: 0;
     color:$color-secondary;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 2;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;

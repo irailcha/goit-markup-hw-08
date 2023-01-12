@@ -12,6 +12,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: scroll;
 
+
+
     @media (max-width: 767px){
      padding: 94px 40px;}
 
@@ -31,18 +33,14 @@
 @media (max-width: 767px){
 width: 450px;
 height: 609px;}
-@media (min-width: 360px){
+@media (min-width: 480px){
      position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
     }
-
-
     background-color: $background-color-first;
-    
     padding: 40px;
-        
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -7,10 +7,6 @@
 }
 
 
-@media(max-width:767px){
-  .menu{
-    display: none;
-  }}
 
 
 .menu-container {
@@ -72,21 +68,35 @@ right: 10px;
 .mobile-menu{
     display: none;
   }
-  
+  .menu{
+    display: flex;
+    vertical-align: middle;
+    align-self: center;
+    gap: 96px;
+
+  }
+
+
   .header__container{
     display: flex;
     vertical-align: middle;
 align-self: center;
-justify-content: baseline;
-    
-  }
-  .menu{
-display: flex;
-justify-content: space-between;
-align-self: center;
-margin-left: 87px;
 gap: 96px;
+
+    
   }
   } 
 
-  
+  @media(max-width:768px){
+    .menu{
+      display: none;
+    }}
+    @media (min-width: 1200px){
+      .menu{
+        gap: 315px;
+      }
+
+      .header__container{
+        gap: 92px;
+      }
+    }
