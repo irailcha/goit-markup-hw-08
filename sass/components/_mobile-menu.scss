@@ -5,7 +5,7 @@
     flex-direction: column;}
 
     .mobile-menu__nav{
-        margin-bottom:auto;
+        margin-bottom:302px;
     }
     .mobile-menu__link{
         color: $color-primary;
@@ -21,7 +21,7 @@
         color: $color-brand;}
     }
     .mobile-menu__list{
-        margin-bottom: 32px;}
+        margin-bottom:32px;}
     
         .mobile-menu:last-child{
             margin-bottom: 0;
@@ -62,11 +62,13 @@
             line-height: 1.17;
         }
         .mobile-menu__contact-list{
-            margin-bottom: 32px;
+            margin-bottom:32px;
+&:last-child{
+    margin-bottom:0;
+}
+
         
-            &:last-child{
-                margin-bottom: 0;
-            }
+
 }
 
 .menu-network{
