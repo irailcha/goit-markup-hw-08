@@ -1,5 +1,11 @@
 .backdrop{
+
+    @media (max-width: 767px){
+        
+       padding: 93px 15px;
+    }
     position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -10,16 +16,7 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    overflow-y: scroll;
-
-
-
-    @media (max-width: 767px){
-     padding: 94px 40px;}
-
-
-
-
+    
 
 
 &--is-hidden {
@@ -30,24 +27,27 @@
 }
 
 .modal{
-@media (max-width: 767px){
-width: 450px;
-height: 609px;}
-@media (min-width: 480px){
-     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    }
-    background-color: $background-color-first;
+    @media (max-width: 767px){
+        max-width: 100%;}
+
+    position: absolute; 
+
+    width: 450px;
     padding: 40px;
+    
+    top: 50%;
+    left: 50%;
+    background-color: $background-color-first;
+
+
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 1;
-    }
 
-.backdrop--is-hidden .modal{
+.backdrop--is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
         visibility: hidden;
         pointer-events: none;
@@ -56,7 +56,7 @@ height: 609px;}
     }
 
 
-    .modal__icon-close {
+&__icon-close {
             position: absolute;
     
             width: 18px;
@@ -74,7 +74,7 @@ height: 609px;}
     
     
         }
-        .modal__close-button {
+&__close-button {
     position: absolute;
 
     top: 8px;
@@ -90,15 +90,13 @@ height: 609px;}
     cursor: pointer;
 
 }
-
+}
 
 
  
 
 
-.modal-form {
-    margin-bottom: 20px;
-}
+
 
 
 .form-field {
@@ -235,7 +233,7 @@ height: 609px;}
         color: $color-secondary;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.71;
+        line-height: 1.17;
         letter-spacing: 0.03em;
 
 
@@ -248,3 +246,28 @@ height: 609px;}
 
     }
 }
+
+@media (min-width: 768px)
+    {
+        .backdrop{
+            padding: 208px 159px;
+        }
+        .modal{
+            max-width: 100%;
+        }}
+
+
+
+    @media (min-width: 1200px){
+        .backdrop{
+            padding: 221px 536px;
+        }
+        .modal{
+            width: 528px;
+        }
+
+        .checkbox__policy{
+            font-size: 14px;
+            line-height: 1.71;}
+        
+    }

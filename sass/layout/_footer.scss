@@ -42,19 +42,18 @@
 
 
     @media(min-width:768px){
-    .footer__contact-network{
+    .footer-elements{
         display: flex;
-        vertical-align: middle;
-        gap: 165px;
-        justify-content: center;
-    }}
+flex-wrap: wrap;
+justify-content: center;
+vertical-align: middle;
 
-    @media(min-width:768px) and (max-width:1199px){
-    .footer-form{
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 450px;
-    }}
+    }
+
+    .network-set{
+        margin-left: 165px;
+    }
+    }
 
 
         
@@ -62,7 +61,7 @@
         .footer{
         &-elements{
                 display: flex;
-                vertical-align: middle;
+                flex-wrap: nowrap;
                 align-items: baseline;
                 text-align: left;
                 
@@ -82,7 +81,8 @@
             display: flex;
             width: 358px;
         margin-bottom: 0;}
-        
-        .footer__contact-network{
-            gap: 70px;
-        }}
+
+        .network-set{
+            margin-left: 70px;
+        }
+    }
