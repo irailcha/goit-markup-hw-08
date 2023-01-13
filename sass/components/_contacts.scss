@@ -1,4 +1,9 @@
 
+@media (max-width:767px){
+    .contact{
+        display:none;
+    }
+}
 @media(min-width:768px){
     .contact{
         display: block;
@@ -58,7 +63,7 @@
     margin: 0;
     color:$color-secondary;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     padding-top: 32px;
@@ -95,3 +100,4 @@
 
 }
 }
+

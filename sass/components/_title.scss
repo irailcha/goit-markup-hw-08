@@ -2,14 +2,21 @@
 .section-hero__title {
         color: $background-color-first;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.61;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        max-width: 696px;
+        max-width: 360px;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 32px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px){
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+            margin-bottom: 32px;
+            }
     }
     
 
