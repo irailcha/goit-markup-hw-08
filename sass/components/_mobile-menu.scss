@@ -1,11 +1,13 @@
 
   
   .mobile-menu{
+    display: flex;
+    flex-direction: column;}
 
-    &__nav{
-        margin-bottom: 306px;
+    .mobile-menu__nav{
+        margin-bottom:auto;
     }
-    &__link{
+    .mobile-menu__link{
         color: $color-primary;
         font-weight: 500;
         font-size: 40px;
@@ -18,15 +20,15 @@
         &:focus {
         color: $color-brand;}
     }
-    &__list{
-        margin-bottom: 32px;
+    .mobile-menu__list{
+        margin-bottom: 32px;}
     
-        &:last-child{
+        .mobile-menu:last-child{
             margin-bottom: 0;
         }
-    }
     
-    &__link--current{
+    
+    .mobile-menu__link--current{
     color: $color-brand;
     font-weight: 500;
     font-size: 40px;
@@ -34,12 +36,9 @@
     letter-spacing: 0.02em;
     margin-bottom: 32px;
     }
-    }
-
     
-    .mobile-menu{
 
-        &__contact-link{
+    .mobile-menu__contact-link{
             color:$color-secondary;
             font-weight: 500;
             letter-spacing: 0.02em;
@@ -53,34 +52,28 @@
         
         }}
         
-        &__link--mail{
+        .mobile-menu__link--mail{
             font-size: 24px;
             line-height: 1.17;
         }
         
-        &__link--phone{
+        .mobile-menu__link--phone{
             font-size: 34px;
             line-height: 1.17;
         }
-        &__contact-list{
+        .mobile-menu__contact-list{
             margin-bottom: 32px;
         
             &:last-child{
                 margin-bottom: 0;
             }
-        }}
-
-        .mobile-menu__contact{
-            margin-bottom: 64px;
-        }
+}
 
 .menu-network{
     display: flex;
+    margin-bottom: 0;
+    margin-top: 64px;
 
-    
-    
-
-    
 }
 
 .menu-network__link{
@@ -103,14 +96,15 @@
         border-right:1px solid rgba(33, 33, 33, 0.2);
         height: 22px;
         padding-right: 10px;
-        padding-left: 10px;
+        padding-left: 10px;}
 
-        &:last-child{
+        .menu-network__list:last-child{
             border: none;
             
         }
-        &:first-child{
+        .menu-network__list:first-child{
             padding-left: 0;
         }
-    }
+
+    
 
