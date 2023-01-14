@@ -4,13 +4,13 @@
     background-color: $background-color-hero;
     text-align: center;
     max-width: 480px;
-    background-image:linear-gradient(to right,
+    background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(../images/hero-img-768.jpg);
     margin-right: auto; 
     margin-left: auto;
-    background-size: contain;
+    background-size: cover;
     
 }
 
