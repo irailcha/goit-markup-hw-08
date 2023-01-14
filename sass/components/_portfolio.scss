@@ -1,26 +1,26 @@
-.section-portfolio {
+@media (min-width:1200px){
+.section-portfolio{
     padding-top: 94px;
-}
+}}
 
-.filter {
+.filter{
     display: flex;
     flex-wrap: wrap;
-    
     margin-bottom: 40px;
     gap: 8px;
 
+@media (min-width:480px) and (max-width: 767px){
+    justify-content: flex-start;
+}
 
-    @media screen and (max-width: 767px){
-        justify-content: flex-start;
+@media screen and (min-width: 768px){
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
     }
-
-    @media screen and (min-width: 768px){
-        margin-bottom: 30px;
-        justify-content: center;
-    }
-    @media screen and (min-width: 1200px){
-        margin-bottom: 50px;
-    }
+@media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+}
 
 
 &__item {
@@ -48,8 +48,6 @@
     padding: 6px 22px;
     transition-property: background-color, color, box-shadow;
 
-    
-    
     &:hover,
     &:focus {
     color: $background-color-first;
@@ -57,5 +55,7 @@
     box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.12), 0px 1px 2px 0px hsla(0, 0%, 0%, 0.08), 0px 3px 1px 0px hsla(0, 0%, 0%, 0.1);
     
     }
-        
-    }
+}
+.button-filter:first-child{
+    padding: 6px 25px;
+}

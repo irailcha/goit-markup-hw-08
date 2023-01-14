@@ -10,11 +10,11 @@
 
 }
 .team {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin: 0;
-        padding: 0;
+    display: flex;
+    flex-direction: column;
 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
         flex-wrap: wrap;
         margin-left: calc(-1 * $card-set-gap);
         margin-top: calc(-1 * $card-set-gap);}

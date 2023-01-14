@@ -1,12 +1,13 @@
 .project-list {
     display: flex;
-
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 
 
     @media screen and (min-width: 768px){
-        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
         margin-left: calc(-1 * $card-set-gap);
         margin-top: calc(-1 * $card-set-gap);}
 
@@ -19,11 +20,9 @@
         text-decoration: none;
         margin-bottom: 30px;
 
-      /*  &__card:last-child{ 
-            margin-bottom: 0;
-        }?*/
+  
         @media screen and (min-width: 768px){
-            flex-basis: calc(100% / 2 - $card-set-gap);
+        flex-basis: calc(100% / 2 - $card-set-gap);
         margin-left: $card-set-gap;
         margin-top: $card-set-gap;}
        
@@ -33,8 +32,11 @@
 
     
     }
-
- 
+.project-list__link{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -58,8 +60,7 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 
 
 
@@ -93,6 +94,7 @@
 
 /*----------*/
 .thumb {
+    
     position: relative;
     overflow: hidden;
 
@@ -145,5 +147,7 @@
         opacity: 0;
 
     }
-
+&__img{
+    width: 100%;
+}
 }
