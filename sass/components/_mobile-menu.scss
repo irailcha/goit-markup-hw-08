@@ -1,12 +1,8 @@
 
-  
-  .mobile-menu{
-    display: flex;
-    flex-direction: column;}
 
-    .mobile-menu__nav{
-        margin-bottom:302px;
-    }
+
+
+
     .mobile-menu__link{
         color: $color-primary;
         font-weight: 500;
@@ -73,9 +69,6 @@
 
 .menu-network{
     display: flex;
-    margin-bottom: 0;
-    margin-top: 64px;
-
 }
 
 .menu-network__link{
@@ -109,4 +102,3 @@
         }
 
     
-

@@ -853,7 +853,7 @@ img {
 .section__title {
   color: #212121;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -863,6 +863,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1086,7 +1087,16 @@ img {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-toggle {
@@ -1279,6 +1289,14 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  .features__list {
+    margin-bottom: 30px;
+  }
+  .features__list:last-child {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .features__list {
     margin-left: 30px;
@@ -1293,14 +1311,6 @@ img {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .features__list {
-    margin-bottom: 30px;
-  }
-  .features__list:last-child {
-    margin-bottom: 0;
-  }
-}
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -1476,7 +1486,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -2182,47 +2192,38 @@ img {
   display: inline-block;
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.checkbox__link {
+@media (min-width: 768px) {
+  .checkbox__policy {
+    font-size: 14px;
+  }
+}
+.checkbox__policy__link {
   color: #2196F3;
   text-decoration: underline;
 }
-
 @media (min-width: 768px) {
-  .backdrop {
+  .checkbox .backdrop {
     padding: 208px 159px;
   }
-  .modal {
+  .checkbox .modal {
     max-width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .backdrop {
+  .checkbox .backdrop {
     padding: 221px 536px;
   }
-  .modal {
+  .checkbox .modal {
     width: 528px;
   }
-  .checkbox__policy {
+  .checkbox .checkbox__policy {
     font-size: 14px;
     line-height: 1.71;
   }
-}
-.mobile-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.mobile-menu__nav {
-  margin-bottom: 302px;
 }
 
 .mobile-menu__link {
@@ -2295,8 +2296,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0;
-  margin-top: 64px;
 }
 
 .menu-network__link {

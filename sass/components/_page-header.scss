@@ -17,7 +17,11 @@
   display: none;
 }
 .menu-container.is-open {
-  display: block;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 

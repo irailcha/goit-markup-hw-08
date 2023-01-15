@@ -16,6 +16,7 @@ padding-bottom: 0;
     display: flex;
     flex-direction: column;
 
+
 @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -33,6 +34,13 @@ padding-bottom: 0;
 
 
 .features__list {
+    @media (max-width: 767px){
+    margin-bottom: 30px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }}
+
     @media screen and (min-width: 768px) {
     margin-left: $card-set-gap;
     margin-top: $card-set-gap;
@@ -43,14 +51,7 @@ padding-bottom: 0;
         
 }
 
-    
-@media screen and (max-width: 479px){
-.features__list{
-    margin-bottom: 30px;
-}
-.features__list:last-child{
-    margin-bottom: 0;
-}}
+
 
 .features__title {
     margin-top: 0;
