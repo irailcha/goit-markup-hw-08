@@ -10,61 +10,62 @@
   </head>
   <body>
     <header class="header">
-    
-      <div class="container header__container" >
-        <nav class="header-nav">
+      <div class="container header__container">
+        <div class="header-nav">
           <a class="logo" href="./index.html"
             >Web<span class="logo__text">Studio</span></a
           >
-         
+
           <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="menu-container"
-        > <svg
-        width="40"
-        height="40"  aria-label="Перемикач мобільного меню">
-        <use class="" href="./images/icons.svg#icon-menu"></use></svg></button>
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
 
-  <div class="menu">
-    <ul class="nav">
-      <li class="nav__list">
-        <a class="nav__link" href="./index.html">Студія</a>
-      </li>
-      <li class="nav__list">
-        <a class="nav__link--current" href="./portfolio.html">Портфоліо</a>
-      </li>
-      <li class="nav__list"><a class="nav__link" href="#">Контакт</a></li>
-    </ul>
-  </nav>
-  <ul class="contact">
+          <div class="menu">
+            <ul class="nav">
+              <li class="nav__list">
+                <a class="nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__list">
+                <a class="nav__link--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="#">Контакт</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="contact">
+            <li class="contact__list">
+              <a
+                class="contact__link contant__link--mail"
+                href="mailto:info@devstudio.com"
+                ><svg class="contact__envelope">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
 
-    <li class="contact__list">
-      <a class="contact__link contant__link--mail" href="mailto:info@devstudio.com"
-        ><svg class="contact__envelope">
-          <use href="./images/icons.svg#envelope"></use>
-        </svg>
-        info@devstudio.com</a
-      >
-    </li>
-  
-    <li class="contact__list">
-      <a class="contact__link contant__link--phone" href="tel:+380961111111"
-        ><svg class="contact__smartphone">
-          <use href="./images/icons.svg#smartphone"></use></svg
-        >+38 096 111 11 11</a
-      >
-    </li>
-
-
-  </ul>
-
-
-
-      </div>
+            <li class="contact__list">
+              <a
+                class="contact__link contant__link--phone"
+                href="tel:+380961111111"
+                ><svg class="contact__smartphone">
+                  <use href="./images/icons.svg#smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-
 
     <main class="portfolio">
       <section class="section section-portfolio">
@@ -81,7 +82,7 @@
               <button type="button" class="button-filter">Додатки</button>
             </li>
             <li class="filter__item">
-              <button type="button" class=" button-filter">Дизайн</button>
+              <button type="button" class="button-filter">Дизайн</button>
             </li>
             <li class="filter__item">
               <button type="button" class="button-filter">Маркетинг</button>
@@ -93,33 +94,39 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio1-450.jpg 1x,
-                    ./images/jpg-2x/portfolio1-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio1-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio1-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio1-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio1-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio1-450.jpg 1x" srcset="./images/jpg-2x/portfolio1-450-@2x.jpg 2x"
-                   alt="Люди, що посміхаються"/>
-     
-            </picture>
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio1-450.jpg     1x,
+                        ./images/jpg-2x/portfolio1-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio1-370.jpg     1x,
+                        ./images/jpg-2x/portfolio1-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio1-354.jpg     1x,
+                        ./images/jpg-2x/portfolio1-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio1-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio1-450-@2x.jpg 2x"
+                      alt="Люди, що посміхаються"
+                    />
+                  </picture>
 
                   <p class="thumb__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -139,38 +146,42 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio2-450.jpg 1x,
-                    ./images/jpg-2x/portfolio2-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio2-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio2-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio2-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio2-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio2-450.jpg 1x" srcset="./images/jpg-2x/portfolio2-450-@2x.jpg 2x"
-                   alt="Гравці в баскетбол з м'ячем"/>
-     
-            </picture>
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio2-450.jpg     1x,
+                        ./images/jpg-2x/portfolio2-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio2-370.jpg     1x,
+                        ./images/jpg-2x/portfolio2-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio2-354.jpg     1x,
+                        ./images/jpg-2x/portfolio2-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio2-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio2-450-@2x.jpg 2x"
+                      alt="Гравці в баскетбол з м'ячем"
+                    />
+                  </picture>
                 </div>
                 <div class="card">
-                  <h2 class="card__title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
                   <p class="card__text">Дизайн</p>
                 </div></a
               >
@@ -180,32 +191,38 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio3-450.jpg 1x,
-                    ./images/jpg-2x/portfolio3-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio3-370.jpg, 
-                    ./images/jpg-2x/portfolio3-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio3-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio3-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio3-450.jpg 1x" srcset="./images/jpg-2x/portfolio3-450-@2x.jpg 2x"
-                   alt="Логотип ресторану, на фоні з рибою"/>
-     
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio3-450.jpg     1x,
+                        ./images/jpg-2x/portfolio3-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio3-370.jpg,
+                        ./images/jpg-2x/portfolio3-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio3-354.jpg     1x,
+                        ./images/jpg-2x/portfolio3-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio3-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio3-450-@2x.jpg 2x"
+                      alt="Логотип ресторану, на фоні з рибою"
+                    />
                   </picture>
                 </div>
                 <div class="card">
@@ -219,32 +236,38 @@
               <a class="lproject-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio4-450.jpg 1x,
-                    ./images/jpg-2x/portfolio4-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio4-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio4-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio4-354.jpg 1x,
-                    ./images/jpg-2x/portfolio4-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio4-450.jpg 1x" srcset="./images/jpg-2x/portfolio4-450-@2x.jpg 2x"
-                   alt="Навушники"/>
-     
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio4-450.jpg     1x,
+                        ./images/jpg-2x/portfolio4-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio4-370.jpg     1x,
+                        ./images/jpg-2x/portfolio4-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio4-354.jpg     1x,
+                        ./images/jpg-2x/portfolio4-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio4-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio4-450-@2x.jpg 2x"
+                      alt="Навушники"
+                    />
                   </picture>
                 </div>
                 <div class="card">
@@ -258,33 +281,38 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio5-450.jpg 1x,
-                    ./images/jpg-2x/portfolio5-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio5-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio5-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio5-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio5-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio5-450.jpg 1x" srcset="./images/jpg-2x/portfolio5-450-@2x.jpg 2x"
-                   alt="Коробки"/>
-     
-                
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio5-450.jpg     1x,
+                        ./images/jpg-2x/portfolio5-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio5-370.jpg     1x,
+                        ./images/jpg-2x/portfolio5-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio5-354.jpg     1x,
+                        ./images/jpg-2x/portfolio5-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio5-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio5-450-@2x.jpg 2x"
+                      alt="Коробки"
+                    />
                   </picture>
                 </div>
                 <div class="card">
@@ -298,38 +326,42 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio6-450.jpg 1x,
-                    ./images/jpg-2x/portfolio6-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio6-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio6-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio6-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio6-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio6-450.jpg 1x" srcset="./images/jpg-2x/portfolio6-450-@2x.jpg 2x"
-                   alt="Компютер"/>
-     
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio6-450.jpg     1x,
+                        ./images/jpg-2x/portfolio6-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio6-370.jpg     1x,
+                        ./images/jpg-2x/portfolio6-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio6-354.jpg     1x,
+                        ./images/jpg-2x/portfolio6-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio6-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio6-450-@2x.jpg 2x"
+                      alt="Компютер"
+                    />
                   </picture>
                 </div>
                 <div class="card">
-                  <h2 class="card__title">
-                    Inspiration has no Borders
-                  </h2>
+                  <h2 class="card__title">Inspiration has no Borders</h2>
                   <p class="card__text">Веб-сайт</p>
                 </div></a
               >
@@ -339,32 +371,38 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio7-450.jpg 1x,
-                    ./images/jpg-2x/portfolio7-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio7-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio7-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio7-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio7-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio7-450.jpg 1x" srcset="./images/jpg-2x/portfolio7-450-@2x.jpg 2x"
-                   alt="Відкрита книга"/>
-     
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio7-450.jpg     1x,
+                        ./images/jpg-2x/portfolio7-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio7-370.jpg     1x,
+                        ./images/jpg-2x/portfolio7-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio7-354.jpg     1x,
+                        ./images/jpg-2x/portfolio7-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio7-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio7-450-@2x.jpg 2x"
+                      alt="Відкрита книга"
+                    />
                   </picture>
                 </div>
                 <div class="card">
@@ -378,32 +416,38 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio8-450.jpg 1x,
-                    ./images/jpg-2x/portfolio8-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio8-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio8-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio8-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio8-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio8-450.jpg 1x" srcset="./images/jpg-2x/portfolio8-450-@2x.jpg 2x"
-                   alt="Бірка"/>
-     
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio8-450.jpg     1x,
+                        ./images/jpg-2x/portfolio8-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio8-370.jpg     1x,
+                        ./images/jpg-2x/portfolio8-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio8-354.jpg     1x,
+                        ./images/jpg-2x/portfolio8-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio8-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio8-450-@2x.jpg 2x"
+                      alt="Бірка"
+                    />
                   </picture>
                 </div>
                 <div class="card">
@@ -417,32 +461,39 @@
               <a class="project-list__link" href="#"
                 ><div class="thumb">
                   <picture class="thumb__img">
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio9-450.jpg 1x,
-                    ./images/jpg-2x/portfolio9-450-@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    sizes="100vw"/>
-     
-                    <source 
-                    srcset=
-                    "./images/jpg-1x/portfolio9-370.jpg 1x, 
-                    ./images/jpg-2x/portfolio9-370-@2x.jpg 2x" 
-                    media="(min-width: 1200px)"
-                   sizes="370px"/>
-     
-                   <source 
-                   srcset=
-                   "./images/jpg-1x/portfolio9-354.jpg 1x, 
-                    ./images/jpg-2x/portfolio9-354-@2x.jpg 2x" 
-                   media="(min-width: 768px)"
-                   sizes="354px"/>
-     
-     
-     
-                   <img src="./images/jpg-1x/portfolio9-450.jpg 1x" srcset="./images/jpg-2x/portfolio9-450-@2x.jpg 2x"
-                   alt="Робота за ноутбуком"/>
-</picture>
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio9-450.jpg     1x,
+                        ./images/jpg-2x/portfolio9-450-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio9-370.jpg     1x,
+                        ./images/jpg-2x/portfolio9-370-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/jpg-1x/portfolio9-354.jpg     1x,
+                        ./images/jpg-2x/portfolio9-354-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <img
+                      src="./images/jpg-1x/portfolio9-450.jpg 1x"
+                      srcset="./images/jpg-2x/portfolio9-450-@2x.jpg 2x"
+                      alt="Робота за ноутбуком"
+                    />
+                  </picture>
                 </div>
                 <div class="card">
                   <h2 class="card__title">Growing Business</h2>
@@ -457,9 +508,8 @@
 
     <footer class="footer">
       <div class="container footer-elements">
-        
         <div class="logo-contact">
-          <a class="logo logo-footer " href="./index.html"
+          <a class="logo logo-footer" href="./index.html"
             >Web<span class="logo__text--inverse">Studio</span></a
           >
 
@@ -516,7 +566,7 @@
             </li>
           </ul>
         </div>
-     
+
         <div class="subscription">
           <h2 class="subscription__title">Підпишіться на розсилку</h2>
 
@@ -538,61 +588,67 @@
       </div>
     </footer>
 
-    <div class="menu-container js-menu-container" aria-expanded="false" id="menu-container">
+    <div
+      class="menu-container js-menu-container"
+      aria-expanded="false"
+      id="menu-container"
+    >
+      <button
+        class="menu-toggle js-close-menu"
+        aria-expanded="false"
+        aria-controls="menu-container"
+      >
+        <svg width="40" height="40">
+          <use class="" href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
 
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link--current" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link" href="#">Контакт</a>
+        </li>
+      </ul>
 
-      <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="menu-container">
-<svg width="40" height="40">
-    <use class="" href="./images/icons.svg#icon-close"></use></svg></button>
+      <ul class="mobile-menu__contact">
+        <li class="mobile-menu__contact-list">
+          <a
+            class="mobile-menu__contact-link mobile-menu__link--phone"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contact-list">
+          <a
+            class="mobile-menu__contact-link mobile-menu__link--mail"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
 
-
-<ul class="mobile-menu__nav">
-  <li class="mobile-menu__list">
-    <a class="mobile-menu__link--current " href="./index.html">Студія</a>
-  </li>
-  <li class="mobile-menu__list">
-    <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
-  </li>
-  <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Контакт</a></li>
-</ul>
-
-
-<ul class="mobile-menu__contact">
-<li class="mobile-menu__contact-list">
-  <a class="mobile-menu__contact-link mobile-menu__link--phone" href="tel:+380961111111"
-    >+38 096 111 11 11</a
-  >
-</li>
-<li class="mobile-menu__contact-list">
-  <a class="mobile-menu__contact-link mobile-menu__link--mail" href="mailto:info@devstudio.com">
-info@devstudio.com</a
-  >
-</li>
-
-</ul>
-
-
-<ul class="menu-network">
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >Instagram</a>
-</li>
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >Twitter</a>
-</li>
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >Facebook</a>
-</li>
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >LinkedIn</a>
-</li>
-</ul>
-
-</div>
+      <ul class="menu-network">
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">Instagram</a>
+        </li>
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">Twitter</a>
+        </li>
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">Facebook</a>
+        </li>
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
-      </body>
+  </body>
 </html>

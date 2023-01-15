@@ -6,270 +6,290 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-<link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header-nav">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__text">Studio</span></a
+          >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
 
-</head>
-<body>
-  <header class="header">
-    <div class="container header__container" >
-      <nav class="header-nav">
-      <a class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="menu-container"> 
-       <svg width="40" height="40"  aria-label="Перемикач мобільного меню">
-        <use class="" href="./images/icons.svg#icon-menu"></use>
-       </svg>
-      </button>
+          <div class="menu">
+            <ul class="nav">
+              <li class="nav__list">
+                <a class="nav__link--current" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="#">Контакт</a>
+              </li>
+            </ul>
+          </div>
 
-    <div class="menu">
-      <ul class="nav">
-        <li class="nav__list">
-          <a class="nav__link--current " href="./index.html">Студія</a>
-        </li>
-        <li class="nav__list">
-          <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="nav__list">
-          <a class="nav__link" href="#">Контакт</a>
-        </li>
-      </ul>
-    </nav>
+          <ul class="contact">
+            <li class="contact__list">
+              <a
+                class="contact__link contant__link--mail"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contact__envelope">
+                  <use href="./images/icons.svg#envelope"></use></svg
+                >info@devstudio.com
+              </a>
+            </li>
 
-      <ul class="contact">
-        <li class="contact__list">
-          <a class="contact__link contant__link--mail" href="mailto:info@devstudio.com"> 
-            <svg class="contact__envelope">
-            <use href="./images/icons.svg#envelope"></use>
-            </svg>info@devstudio.com
-          </a>
-        </li>
-    
-        <li class="contact__list">
-          <a class="contact__link contant__link--phone" href="tel:+380961111111"> 
-            <svg class="contact__smartphone">
-          <use href="./images/icons.svg#smartphone"></use>
-          </svg>+38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-    </div>
-    </div>
-</header>
-
-<main>
-  <section class="section-hero">
-    <div class="container">
-      <h1 class="section-hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open type="button" class="button-hero">
-          Замовити послугу
-        </button>
-    </div>
-  </section>
-
-  <section class="section section-features">
-    <div class="container">
-      <h2 class="visually-hidden">наші переваги</h2>
-        <ul class="features">
-          <li class="features__list">
-            <h3 class="features__title">Увага до деталей</h3>
-            <p class="features__text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-
-          <li class="features__list">
-            <h3 class="features__title">Пунктуальність</h3>
-            <p class="features__text">
-              Завдання організації, особливо рамки і місце навчання кадрів
-              тягне у себе.
-            </p>
-          </li>
-
-          <li class="features__list">
-            <h3 class="features__title">Планування</h3>
-            <p class="features__text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-
-          <li class="features__list">
-            <h3 class="features__title">Сучасні технологіі</h3>
-            <p class="features__text">
-              Значимість цих проблем настільки очевидна, що реалізація
-              планових завдань.
-            </p>
-          </li>
-        </ul>
+            <li class="contact__list">
+              <a
+                class="contact__link contant__link--phone"
+                href="tel:+380961111111"
+              >
+                <svg class="contact__smartphone">
+                  <use href="./images/icons.svg#smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </section>
+    </header>
 
-  <section class="section section-development">
-    <div class="container">
-      <h2 class="section__title">Чим ми займаємося</h2>
-        <ul class="development">
-          <li class="development__card">
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <h1 class="section-hero__title">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button data-modal-open type="button" class="button-hero">
+            Замовити послугу
+          </button>
+        </div>
+      </section>
 
+      <section class="section section-features">
+        <div class="container">
+          <h2 class="visually-hidden">наші переваги</h2>
+          <ul class="features">
+            <li class="features__list">
+              <h3 class="features__title">Увага до деталей</h3>
+              <p class="features__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
 
-            <img
-            srcset="
-            ./images/jpg-1x/development1-370.jpg 1x,
-            ./images/jpg-2x/development1-2x.jpg 2x
-            "
-              class="development__image"
-              src="./images/jpg-1x/development1-370.jpg"
-              alt="Робота за комютером"
-              width="370"/>
+            <li class="features__list">
+              <h3 class="features__title">Пунктуальність</h3>
+              <p class="features__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+
+            <li class="features__list">
+              <h3 class="features__title">Планування</h3>
+              <p class="features__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+
+            <li class="features__list">
+              <h3 class="features__title">Сучасні технологіі</h3>
+              <p class="features__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-development">
+        <div class="container">
+          <h2 class="section__title">Чим ми займаємося</h2>
+          <ul class="development">
+            <li class="development__card">
+              <img
+                srcset="
+                  ./images/jpg-1x/development1-370.jpg 1x,
+                  ./images/jpg-2x/development1-2x.jpg  2x
+                "
+                class="development__image"
+                src="./images/jpg-1x/development1-370.jpg"
+                alt="Робота за комютером"
+                width="370"
+              />
               <div class="label">
                 <h3 class="label__title">десктопні додатки</h3>
               </div>
-          </li>
+            </li>
 
-          <li class="development__card">
-
-
+            <li class="development__card">
               <img
-              srcset="
-              ./images/jpg-1x/development2-370.jpg 1x,
-              ./images/jpg-2x/development2-2x.jpg 2x
-            "
+                srcset="
+                  ./images/jpg-1x/development2-370.jpg 1x,
+                  ./images/jpg-2x/development2-2x.jpg  2x
+                "
                 class="development__image"
                 src="./images/jpg-1x/development2-370.jpg"
                 alt="Робота за допомогою телефону"
-                width="370"/>
+                width="370"
+              />
               <div class="label">
                 <h3 class="label__title">мобільні додатки</h3>
               </div>
-          </li>
+            </li>
 
-          <li class="development__card">
-
-
+            <li class="development__card">
               <img
-              srcset="
-              ./images/jpg-1x/development3-370.jpg 1x,
-            ./images/jpg-2x/development3-2x.jpg 2x
-            "
+                srcset="
+                  ./images/jpg-1x/development3-370.jpg 1x,
+                  ./images/jpg-2x/development3-2x.jpg  2x
+                "
                 class="development__image"
                 src="./images/jpg-1x/development3-370.jpg"
                 alt="Робота на планшеті"
-                width="370"/>
+                width="370"
+              />
               <div class="label">
                 <h3 class="label__title">дизайнерські рішення</h3>
               </div>
-          </li>
-        </ul>
-      </div>
-  </section>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <section class="section-team">
-    <div class="container">
-      <h2 class="section__title">Наша команда</h2>
-         <ul class="team">
+      <section class="section-team">
+        <div class="container">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team">
             <li class="team__card">
               <picture>
-               <source 
-               srcset=
-               "./images/jpg-1x/team1-450.jpg 1x,
-               ./images/jpg-2x/team1-450-@2x.jpg 2x" 
-               media="(max-width: 767px)"
-               sizes="100vw"/>
+                <source
+                  srcset="
+                    ./images/jpg-1x/team1-450.jpg     1x,
+                    ./images/jpg-2x/team1-450-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
 
-               <source 
-               srcset=
-               "./images/jpg-1x/team1-270.jpg 1x, 
-               ./images/jpg-2x/team1-270-@2x.jpg 2x" 
-               media="(min-width: 1200px)"
-              sizes="270px"/>
+                <source
+                  srcset="
+                    ./images/jpg-1x/team1-270.jpg     1x,
+                    ./images/jpg-2x/team1-270-@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
 
-              <source 
-              srcset="
-              ./images/jpg-1x/team1-354.jpg 1x, 
-              ./images/jpg-2x/team1-354-@2x.jpg 2x" 
-              media="(min-width: 768px)"
-              sizes="354px"/>
+                <source
+                  srcset="
+                    ./images/jpg-1x/team1-354.jpg     1x,
+                    ./images/jpg-2x/team1-354-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
 
-
-
-              <img src="./images/jpg-1x/team1-450.jpg" srcset="./images/jpg-2x/team1-450-@2x.jpg 2x"
-              alt="Усміхнений чоловік в окулярах"/>
-
-       </picture>
-
+                <img
+                  src="./images/jpg-1x/team1-450.jpg"
+                  srcset="./images/jpg-2x/team1-450-@2x.jpg 2x"
+                  alt="Усміхнений чоловік в окулярах"
+                />
+              </picture>
 
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
-                <ul class="network">
-                  <li class="network__card">
-                    <a class="network__link" href="#">
-                      <svg class="network__icon">
+              <ul class="network">
+                <li class="network__card">
+                  <a class="network__link" href="#">
+                    <svg class="network__icon">
                       <use href="./images/icons.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    </svg>
+                  </a>
+                </li>
 
-                  <li class="network__card">
+                <li class="network__card">
                   <a class="network__link" href="#">
                     <svg class="network__icon">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
-                  </li>
+                </li>
 
                 <li class="network__card">
                   <a class="network__link" href="#">
                     <svg class="network__icon">
                       <use href="./images/icons.svg#facebook"></use>
-                      </svg>
+                    </svg>
                   </a>
                 </li>
                 <li class="network__card">
                   <a class="network__link" href="#">
                     <svg class="network__icon">
-                      <use href="./images/icons.svg#linkedin"></use>
-                      </svg></a>
+                      <use href="./images/icons.svg#linkedin"></use></svg
+                  ></a>
                 </li>
               </ul>
             </li>
 
             <li class="team__card">
               <picture>
-                <source 
-                srcset=
-                "./images/jpg-1x/team2-450.jpg 1x,
-                ./images/jpg-2x/team2-450-@2x.jpg 2x" 
-                media="(max-width: 767px)"
-                sizes="100vw"/>
- 
-                <source 
-                srcset=
-                "./images/jpg-1x/team2-270.jpg 1x, 
-                ./images/jpg-2x/team2-270-@2x.jpg 2x" 
-                media="(min-width: 1200px)"
-               sizes="270px"/>
- 
-               <source 
-               srcset="
-               ./images/jpg-1x/team2-354.jpg 1x, 
-               ./images/jpg-2x/team2-354-@2x.jpg 2x" 
-               media="(min-width: 768px)"
-               sizes="354px"/>
- 
- 
- 
-               <img src="./images/jpg-1x/team2-450.jpg" srcset="./images/jpg-2x/team2-450-@2x.jpg 2x"
-               alt="Жінка в окулярах"/>
- 
-        </picture>
+                <source
+                  srcset="
+                    ./images/jpg-1x/team2-450.jpg     1x,
+                    ./images/jpg-2x/team2-450-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
 
+                <source
+                  srcset="
+                    ./images/jpg-1x/team2-270.jpg     1x,
+                    ./images/jpg-2x/team2-270-@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
 
-                <h3 class="team__name">Ольга Рєпіна</h3>
-                <p class="team__text">Frontend Developer</p>
-                <ul class="network">
+                <source
+                  srcset="
+                    ./images/jpg-1x/team2-354.jpg     1x,
+                    ./images/jpg-2x/team2-354-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+
+                <img
+                  src="./images/jpg-1x/team2-450.jpg"
+                  srcset="./images/jpg-2x/team2-450-@2x.jpg 2x"
+                  alt="Жінка в окулярах"
+                />
+              </picture>
+
+              <h3 class="team__name">Ольга Рєпіна</h3>
+              <p class="team__text">Frontend Developer</p>
+              <ul class="network">
                 <li class="network__card">
                   <a class="network__link" href="#"
                     ><svg class="network__icon">
-                      <use href="./images/icons.svg#instagram"></use> 
-                      </svg>
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="network__card">
@@ -298,38 +318,43 @@
 
             <li class="team__card">
               <picture>
-                <source 
-                srcset=
-                "./images/jpg-1x/team3-450.jpg 1x,
-                ./images/jpg-2x/team3-450-@2x.jpg 2x" 
-                media="(max-width: 767px)"
-                sizes="100vw"/>
- 
-                <source 
-                srcset=
-                "./images/jpg-1x/team3-270.jpg 1x, 
-                ./images/jpg-2x/team3-270-@2x.jpg 2x" 
-                media="(min-width: 1200px)"
-               sizes="270px"/>
- 
-               <source 
-               srcset="
-               ./images/jpg-1x/team3-354.jpg 1x, 
-               ./images/jpg-2x/team3-354-@2x.jpg 2x" 
-               media="(min-width: 768px)"
-               sizes="354px"/>
- 
- 
- 
-               <img src="./images/jpg-1x/team3-450.jpg" srcset="./images/jpg-2x/team3-450-@2x.jpg 2x"
-               alt="Усміхнений чоловік"/>
- 
-        </picture>
+                <source
+                  srcset="
+                    ./images/jpg-1x/team3-450.jpg     1x,
+                    ./images/jpg-2x/team3-450-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
 
+                <source
+                  srcset="
+                    ./images/jpg-1x/team3-270.jpg     1x,
+                    ./images/jpg-2x/team3-270-@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
 
-                <h3 class="team__name">Микола Тарасов</h3>
-                <p class="team__text">Marketing</p>
-                <ul class="network">
+                <source
+                  srcset="
+                    ./images/jpg-1x/team3-354.jpg     1x,
+                    ./images/jpg-2x/team3-354-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+
+                <img
+                  src="./images/jpg-1x/team3-450.jpg"
+                  srcset="./images/jpg-2x/team3-450-@2x.jpg 2x"
+                  alt="Усміхнений чоловік"
+                />
+              </picture>
+
+              <h3 class="team__name">Микола Тарасов</h3>
+              <p class="team__text">Marketing</p>
+              <ul class="network">
                 <li class="network__card">
                   <a class="network__link" href="#"
                     ><svg class="network__icon">
@@ -359,33 +384,39 @@
 
             <li class="team__card">
               <picture>
-                <source 
-                srcset=
-                "./images/jpg-1x/team4-450.jpg 1x,
-                ./images/jpg-2x/team4-450-@2x.jpg 2x" 
-                media="(max-width: 767px)"
-                sizes="100vw"/>
- 
-                <source 
-                srcset=
-                "./images/jpg-1x/team4-270.jpg 1x, 
-                ./images/jpg-2x/team4-270-@2x.jpg 2x" 
-                media="(min-width: 1200px)"
-               sizes="270px"/>
- 
-               <source 
-               srcset="
-               ./images/jpg-1x/team4-354.jpg 1x, 
-               ./images/jpg-2x/team4-354-@2x.jpg 2x" 
-               media="(min-width: 768px)"
-               sizes="354px"/>
- 
- 
- 
-               <img src="./images/jpg-1x/team4-450.jpg" srcset="./images/jpg-2x/team4-450-@2x.jpg 2x"
-               alt="Усміхнений чоловік в окулярах"/>
- 
-        </picture>
+                <source
+                  srcset="
+                    ./images/jpg-1x/team4-450.jpg     1x,
+                    ./images/jpg-2x/team4-450-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+
+                <source
+                  srcset="
+                    ./images/jpg-1x/team4-270.jpg     1x,
+                    ./images/jpg-2x/team4-270-@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+
+                <source
+                  srcset="
+                    ./images/jpg-1x/team4-354.jpg     1x,
+                    ./images/jpg-2x/team4-354-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+
+                <img
+                  src="./images/jpg-1x/team4-450.jpg"
+                  srcset="./images/jpg-2x/team4-450-@2x.jpg 2x"
+                  alt="Усміхнений чоловік в окулярах"
+                />
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="network">
@@ -471,9 +502,8 @@
 
     <footer class="footer">
       <div class="container footer-elements">
-       
         <div class="logo-contact">
-          <a class="logo logo-footer " href="./index.html"
+          <a class="logo logo-footer" href="./index.html"
             >Web<span class="logo__text--inverse">Studio</span></a
           >
 
@@ -529,8 +559,7 @@
               ></a>
             </li>
           </ul>
-        
-      </div>
+        </div>
         <div class="subscription">
           <h2 class="subscription__title">Підпишіться на розсилку</h2>
 
@@ -554,7 +583,7 @@
 
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class=" modal__close-button">
+        <button data-modal-close type="button" class="modal__close-button">
           <svg class="modal__icon-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -611,81 +640,88 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-       
 
-        <div class="checkbox">
-          <input class="checkbox__input" type="checkbox" name="policy" id="policy" />
+          <div class="checkbox">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
 
-          <label class="checkbox__policy" for="policy"
-            >Погоджуюся з розсилкою та приймаю
-            <span
-              ><a href="#" class="checkbox__link">Умови договору</a></span
-            ></label
-          >
-        </div>
+            <label class="checkbox__policy" for="policy"
+              >Погоджуюся з розсилкою та приймаю
+              <span
+                ><a href="#" class="checkbox__link">Умови договору</a></span
+              ></label
+            >
+          </div>
 
-        <button type="submit" class="button-modal-submit">Відправити</button>
-      </form>
+          <button type="submit" class="button-modal-submit">Відправити</button>
+        </form>
       </div>
     </div>
 
-    
+    <div
+      class="menu-container js-menu-container"
+      aria-expanded="false"
+      id="menu-container"
+    >
+      <button
+        class="menu-toggle js-close-menu"
+        aria-expanded="false"
+        aria-controls="menu-container"
+      >
+        <svg width="40" height="40">
+          <use class="" href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
 
-    <div class="menu-container js-menu-container" aria-expanded="false" id="menu-container">
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link--current" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link" href="#">Контакт</a>
+        </li>
+      </ul>
 
+      <ul class="mobile-menu__contact">
+        <li class="mobile-menu__contact-list">
+          <a
+            class="mobile-menu__contact-link mobile-menu__link--phone"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contact-list">
+          <a
+            class="mobile-menu__contact-link mobile-menu__link--mail"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
 
-      <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="menu-container">
-<svg width="40" height="40">
-    <use class="" href="./images/icons.svg#icon-close"></use></svg></button>
-
-
-<ul class="mobile-menu__nav">
-  <li class="mobile-menu__list">
-    <a class="mobile-menu__link--current " href="./index.html">Студія</a>
-  </li>
-  <li class="mobile-menu__list">
-    <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
-  </li>
-  <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Контакт</a></li>
-</ul>
-
-
-<ul class="mobile-menu__contact">
-<li class="mobile-menu__contact-list">
-  <a class="mobile-menu__contact-link mobile-menu__link--phone" href="tel:+380961111111"
-    >+38 096 111 11 11</a
-  >
-</li>
-<li class="mobile-menu__contact-list">
-  <a class="mobile-menu__contact-link mobile-menu__link--mail" href="mailto:info@devstudio.com">
-info@devstudio.com</a
-  >
-</li>
-
-</ul>
-
-
-<ul class="menu-network">
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >Instagram</a>
-</li>
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >Twitter</a>
-</li>
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >Facebook</a>
-</li>
-<li class="menu-network__list">
-  <a class="menu-network__link" href="#"
-    >LinkedIn</a>
-</li>
-</ul>
-
-</div>
-
+      <ul class="menu-network">
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">Instagram</a>
+        </li>
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">Twitter</a>
+        </li>
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">Facebook</a>
+        </li>
+        <li class="menu-network__list">
+          <a class="menu-network__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
