@@ -1,4 +1,7 @@
 
+.mobile-menu__nav{
+    margin-bottom: auto;
+}
 
 
 
@@ -19,7 +22,7 @@
     .mobile-menu__list{
         margin-bottom:32px;}
     
-        .mobile-menu:last-child{
+        .mobile-menu__list:last-child{
             margin-bottom: 0;
         }
     
@@ -63,12 +66,12 @@
     margin-bottom:0;
 }
 
-        
-
 }
 
 .menu-network{
     display: flex;
+    margin-top: 64px;
+    
 }
 
 .menu-network__link{
