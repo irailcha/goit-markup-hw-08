@@ -1994,6 +1994,7 @@ img {
 .modal {
   position: absolute;
   width: 450px;
+  height: 609px;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -2011,6 +2012,12 @@ img {
 @media (max-width: 767px) {
   .modal {
     max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 .backdrop--is-hidden .modal {
@@ -2048,6 +2055,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.modal-form {
+  margin-bottom: 20px;
 }
 
 .form-field {
@@ -2193,39 +2204,298 @@ img {
   color: #757575;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .checkbox__policy {
     font-size: 14px;
   }
 }
-.checkbox__policy__link {
+.checkbox__link {
   color: #2196F3;
   text-decoration: underline;
 }
-@media (min-width: 768px) {
-  .checkbox .backdrop {
-    padding: 208px 159px;
-  }
-  .checkbox .modal {
-    max-width: 100%;
-  }
+
+/*
+
+
+.backdrop{
+    @media (max-width: 767px){
+        padding: 93px 15px;
+    }
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+&--is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
-@media (min-width: 1200px) {
-  .checkbox .backdrop {
-    padding: 221px 536px;
-  }
-  .checkbox .modal {
-    width: 528px;
-  }
-  .checkbox .checkbox__policy {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 
+.modal{
+        @media (max-width: 767px) {
+                max-width: 100%;
+
+            }
+
+
+    position: absolute; 
+
+    padding: 40px;
+
+    top: 50%;
+    left: 50%;
+    background-color: $background-color-first;
+
+
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+.backdrop--is-hidden & {
+        transform: translate(-50%, -50%) scale(0.5);
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+
+    }
+
+
+&__icon-close {
+            position: absolute;
+
+            width: 18px;
+            height: 18px;
+            fill: $color-logo-second;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            &:hover,
+            &:focus {
+                fill: $color-brand;
+            }
+
+
+        }
+&__close-button {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    @include bordered (1px, rgba(0, 0, 0, 0.1));
+    background-color: transparent;
+    padding: 12px;
+    align-items: center;
+    cursor: pointer;
+
+}
+}
+
+
+
+
+
+
+
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__label {
+        color: $color-secondary;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+    }
+
+    &__textarea {
+        margin-bottom: 0;
+    }
+}
+
+
+.input {
+    position: relative;
+
+    &__field {
+        width: 100%;
+        @include bordered (1px,rgba(33, 33, 33, 0.2));
+        border-radius: 4px;
+        height: 40px;
+        display: inline-block;
+
+        transition-property: border, fill;
+        transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font: inherit;
+        padding-left: 42px;
+        outline: none;
+
+
+        &:hover,
+        &:focus {
+            border-color: $color-brand;
+        }
+    }
+
+    &__icon {
+        @include icon (18px, 18px, currentColor);
+        position: absolute;
+        display: inline-block;
+        top: 11px;
+        left: 12px;
+    }
+
+    &__textarea {
+        height: 120px;
+        padding-left: 16px;
+        padding-top: 12px;
+        resize: none;
+    }
+
+    &__textarea::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    }
+
+    &__field:hover~&__icon,
+    &__field:focus~&__icon {
+        color: $color-brand;
+
+    }
+
+
+}
+
+
+.checkbox {
+
+    text-align: center;
+    margin-bottom: 30px;
+
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+
+
+
+    &__policy::before {
+        background-color: transparent;
+        content: '';
+        width: 16px;
+        height: 15px;
+        @include bordered (2px, $color-primary);
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 7px;
+        vertical-align: middle;
+}
+
+
+
+    &__input:checked+&__policy::before {
+        background-color: $color-brand;
+        border-color: $color-brand;
+        background-image: url(../images/icon-check.svg);
+        fill: $background-color-first;
+        background-size: contain;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+
+        transition-property: background-origin;
+        transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__input:hover+&__policy::before,
+&__input:focus+&__policy::before{
+    border-color: $color-brand;
+}
+
+
+
+
+
+    &__policy {
+        display: inline-block;
+        color: $color-secondary;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+
+@media (min-width:1200px){
+        font-size: 14px;
+    }
+
+    &__link {
+        color: $color-brand;
+        text-decoration: underline;
+
+    }
+}
+
+@media (min-width: 768px)
+    {
+        .backdrop{
+            padding: 208px 159px;
+        }
+        .modal{
+            max-width: 100%;
+        }}
+
+
+
+    @media (min-width: 1200px){
+        .backdrop{
+            padding: 221px 536px;
+        }
+        .modal{
+            width: 528px;
+        }
+
+        .checkbox__policy{
+            font-size: 14px;
+            line-height: 1.71;}
+
+    }}*/
 .mobile-menu__nav {
   margin-bottom: auto;
 }
