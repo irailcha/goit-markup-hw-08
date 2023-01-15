@@ -27,8 +27,7 @@
 }
 
 .modal{
-    @media (max-width: 767px){
-        max-width: 100%;}
+    
 
     position: absolute; 
 
@@ -46,6 +45,10 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media (max-width: 767px) {
+            max-width: 100%;
+        }
 
 .backdrop--is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
