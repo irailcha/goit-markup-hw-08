@@ -1079,7 +1079,7 @@ img {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   padding: 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;
