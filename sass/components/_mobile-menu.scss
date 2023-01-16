@@ -24,18 +24,12 @@
     &:focus {
         color: $color-brand;
 
-        @media (max-width:440px) {
-                font-size: 36px;
-            }
     }
 }
 
 .mobile-menu__list {
     margin-bottom: 32px;
 
-    @media (max-width:440px) {
-            margin-bottom: 28px;
-        }
 }
 
 .mobile-menu__list:last-child {
@@ -51,9 +45,7 @@
     letter-spacing: 0.02em;
     margin-bottom: 32px;
 
-    @media (max-width:440px) {
-            font-size: 38px;
-        }
+
 }
 
 
@@ -73,17 +65,12 @@
 }
 
 .mobile-menu__link--mail {
-    @media (max-width:440px) {
-            font-size: 20px;
-        }
     font-size: 24px;
     line-height: 1.17;
 }
 
 .mobile-menu__link--phone {
-    @media (max-width:440px) {
-            font-size: 30px;
-        }
+
     font-size: 34px;
     line-height: 1.17;
 }
@@ -93,9 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 64px;
-    @media (max-width:440px) {
-            margin-top: 60px;
-        }
+
 
 }
 
@@ -116,9 +101,7 @@
         color: $color-brand;
 
     }
-@media (max-width:440px){
-    font-size: 14px;
-}
+
 }
 
 .menu-network__list {
@@ -148,7 +131,25 @@
     flex-direction: column;
     gap: 32px;
 
-    @media (max-width:440px) {
-            gap: 28px;
-        }
+
+}
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: $background-color-first;
+    z-index: 999;
+    display: none;
+}
+
+.menu-container.is-open {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
 }
