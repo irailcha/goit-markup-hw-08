@@ -7,7 +7,7 @@
 .mobile-menu{
     display: flex;
     flex-direction: column;
-  
+
 }
 
 .mobile-menu__link {
@@ -23,7 +23,9 @@
     &:hover,
     &:focus {
         color: $color-brand;
-
+@media (max-width:480px){
+    font-size: 36px;
+}
     }
 }
 
@@ -45,7 +47,9 @@
     letter-spacing: 0.02em;
     margin-bottom: 32px;
 
-
+@media (max-width:480px) {
+        font-size: 36px;
+    }
 }
 
 
@@ -67,12 +71,18 @@
 .mobile-menu__link--mail {
     font-size: 24px;
     line-height: 1.17;
+    @media (max-width:480px) {
+            font-size: 20px;
+        }
 }
 
 .mobile-menu__link--phone {
 
     font-size: 34px;
     line-height: 1.17;
+    @media (max-width:480px) {
+            font-size: 30px;
+        }
 }
 
 
@@ -95,6 +105,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (max-width:480px) {
+            font-size: 14px;
+        }
 
     &:hover,
     &:focus {
@@ -130,6 +144,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+   
 
 
 }
@@ -137,8 +152,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
     padding: 48px 40px;
     background-color: $background-color-first;
     z-index: 999;

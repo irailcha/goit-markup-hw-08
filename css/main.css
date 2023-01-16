@@ -2505,6 +2505,11 @@ img {
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #2196F3;
 }
+@media (max-width: 480px) {
+  .mobile-menu__link:hover, .mobile-menu__link:focus {
+    font-size: 36px;
+  }
+}
 
 .mobile-menu__list {
   margin-bottom: 32px;
@@ -2521,6 +2526,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
+}
+@media (max-width: 480px) {
+  .mobile-menu__link--current {
+    font-size: 36px;
+  }
 }
 
 .mobile-menu__contact-link {
@@ -2542,10 +2552,20 @@ img {
   font-size: 24px;
   line-height: 1.17;
 }
+@media (max-width: 480px) {
+  .mobile-menu__link--mail {
+    font-size: 20px;
+  }
+}
 
 .mobile-menu__link--phone {
   font-size: 34px;
   line-height: 1.17;
+}
+@media (max-width: 480px) {
+  .mobile-menu__link--phone {
+    font-size: 30px;
+  }
 }
 
 .menu-network {
@@ -2569,6 +2589,11 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 480px) {
+  .menu-network__link {
+    font-size: 14px;
+  }
 }
 .menu-network__link:hover, .menu-network__link:focus {
   color: #2196F3;
@@ -2614,8 +2639,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
   padding: 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;
