@@ -1144,14 +1144,6 @@ img {
   .mobile-menu {
     display: none;
   }
-  .header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    vertical-align: middle;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1167,10 +1159,16 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 768px) {
-  .menu {
+  .nav {
+    display: none;
+  }
+  .contact {
     display: none;
   }
 }
