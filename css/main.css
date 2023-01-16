@@ -2605,6 +2605,13 @@ img {
   padding-right: 10px;
   padding-left: 10px;
 }
+@media (max-width: 480px) {
+  .menu-network__list {
+    padding-right: 7px;
+    padding-left: 7px;
+    height: 20px;
+  }
+}
 
 .menu-network__list:last-child {
   border: none;
